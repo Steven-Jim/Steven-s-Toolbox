@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 # This is Steven's Toolbox version [alpha]
 # Visit website www.github.com/Steven-Jim
-from modules import Battle_Ship_S, password_maker, word_backward
+from modules import Battle_Ship_S, password_maker, word_backward, repeater
 
 
 def check():
@@ -12,6 +12,8 @@ def check():
         password_maker.main()
     elif tool == 'Battle_Ship_No_GUI':
         Battle_Ship_S.main()
+    elif tool == 'repeater':
+        repeater.main()
     else:
         print('hi the worst speller in town!')
         check()
