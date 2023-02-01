@@ -1,14 +1,32 @@
 # -*- coding: utf-8 -*-
+import random
+
+
 def main():
     pass
 
 
-def start():
-    line1 = ['■', '■', '■', '■', '■']
-    line2 = ['■', '■', '■', '■', '■']
-    line3 = ['■', '■', '■', '■', '■']
-    line4 = ['■', '■', '■', '■', '■']
-    line5 = ['■', '■', '■', '■', '■']
-def hit_action(line_number,number_in_line):
-    if line_number==1:
+def ai():
+    thing = None
+    number = random.randint(0, 4)
+    if number == 0:
+        thing = '■'
+    elif number == 1:
+        thing = 'pass'
+    elif number == 2:
+        thing = 'pass'
+    elif number == 3:
+        thing = 'pass'
+    return thing
 
+
+def start():
+    sea = (ai(), ai(), ai(), ai(), ai(),
+           ai(), ai(), ai(), ai(), ai(),
+           ai(), ai(), ai(), ai(), ai(),
+           ai(), ai(), ai(), ai(), ai(),
+           ai(), ai(), ai(), ai(), ai())
+
+
+def hit_action(line_number, number_in_line):
+    pass
